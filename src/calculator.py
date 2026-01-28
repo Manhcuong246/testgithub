@@ -72,6 +72,20 @@ def divide(a: float, b: float) -> float:
     return a / b
 
 
+def power(a: float, b: float) -> float:
+    """
+    Tính a mũ b (a ** b).
+
+    Hàm này giả sử được thêm bởi một Dev khác trong nhánh
+    'feature/add-power-function' và merge qua Pull Request.
+
+    Ví dụ:
+    >>> power(2, 3)
+    8
+    """
+    return a ** b
+
+
 if __name__ == "__main__":
     # Đoạn này mô phỏng việc chạy nhanh để test bằng tay.
     print("Demo calculator:")
@@ -79,5 +93,5 @@ if __name__ == "__main__":
     print("5 - 2 =", subtract(5, 2))
     print("2 * 3 =", multiply(2, 3))
     print("6 / 3 =", divide(6, 3))
-
+    print("2 ** 3 =", power(2, 3))
 
